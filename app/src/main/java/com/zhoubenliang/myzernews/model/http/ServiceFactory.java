@@ -1,10 +1,7 @@
 package com.zhoubenliang.myzernews.model.http;
 
 import com.common.model.http.HttpClient;
-import com.matto.model.config.ApiConstant;
-import com.matto.pojo.Gank;
-
-import retrofit2.Call;
+import com.zhoubenliang.myzernews.model.config.ApiConstant;
 
 
 /**

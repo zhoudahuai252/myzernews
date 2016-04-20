@@ -7,7 +7,6 @@ import android.view.Window;
 
 import com.common.R;
 
-import java.util.logging.Logger;
 
 import butterknife.ButterKnife;
 
