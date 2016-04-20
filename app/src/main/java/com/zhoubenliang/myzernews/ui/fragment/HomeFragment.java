@@ -6,9 +6,8 @@ import android.widget.ImageView;
 
 import com.common.view.base.BaseFragment;
 import com.common.view.widget.OnClickEvent;
-import com.matto.R;
-import com.matto.ui.activity.AndroidSwipActivity;
-import com.matto.ui.activity.LoginActivity;
+import com.zhoubenliang.myzernews.R;
+import com.zhoubenliang.myzernews.ui.activity.AndroidSwipActivity;
 
 import butterknife.Bind;
 

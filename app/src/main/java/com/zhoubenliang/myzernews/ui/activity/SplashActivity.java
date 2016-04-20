@@ -7,8 +7,8 @@ import android.widget.ImageView;
 
 import com.common.view.base.BaseActivity;
 import com.common.view.base.StatusBarUtil;
-import com.matto.R;
-import com.matto.util.AnimationUtil;
+import com.zhoubenliang.myzernews.R;
+import com.zhoubenliang.myzernews.util.AnimationUtil;
 
 import butterknife.Bind;
 

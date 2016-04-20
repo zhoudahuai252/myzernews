@@ -2,10 +2,10 @@ package com.zhoubenliang.myzernews.model;
 
 import android.util.Log;
 
-import com.matto.model.http.MainService;
-import com.matto.model.http.ServiceFactory;
-import com.matto.pojo.Gank;
-import com.matto.ui.view.LoginView;
+import com.zhoubenliang.myzernews.model.http.MainService;
+import com.zhoubenliang.myzernews.model.http.ServiceFactory;
+import com.zhoubenliang.myzernews.pojo.Gank;
+import com.zhoubenliang.myzernews.ui.view.LoginView;
 
 import retrofit2.Call;
 import retrofit2.Callback;

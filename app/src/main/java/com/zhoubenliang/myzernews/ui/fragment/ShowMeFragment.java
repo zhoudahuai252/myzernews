@@ -1,7 +1,7 @@
 package com.zhoubenliang.myzernews.ui.fragment;
 
 import com.common.view.base.BaseFragment;
-import com.matto.R;
+import com.zhoubenliang.myzernews.R;
 
 /**
  * author meikoz on 2016/4/19.

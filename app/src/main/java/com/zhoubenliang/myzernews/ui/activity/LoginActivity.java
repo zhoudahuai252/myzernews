@@ -5,12 +5,12 @@ import android.content.Intent;
 import android.widget.EditText;
 
 import com.common.model.basic.ToastTip;
-import com.common.view.base.BaseActivity;
-import com.matto.ui.widget.TitleBar;
-import com.matto.R;
 import com.common.model.control.LogicProxy;
-import com.matto.model.LoginLogic;
-import com.matto.ui.view.LoginView;
+import com.common.view.base.BaseActivity;
+import com.zhoubenliang.myzernews.R;
+import com.zhoubenliang.myzernews.model.LoginLogic;
+import com.zhoubenliang.myzernews.ui.view.LoginView;
+import com.zhoubenliang.myzernews.ui.widget.TitleBar;
 
 import butterknife.Bind;
 import butterknife.OnClick;

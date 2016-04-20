@@ -1,7 +1,7 @@
 package com.zhoubenliang.myzernews.model.http;
 
 
-import com.matto.pojo.Gank;
+import com.zhoubenliang.myzernews.pojo.Gank;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

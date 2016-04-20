@@ -12,7 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.common.utils.DisplayUtil;
-import com.matto.R;
+import com.zhoubenliang.myzernews.R;
 
 /**
  * author miekoz on 2016/3/15.

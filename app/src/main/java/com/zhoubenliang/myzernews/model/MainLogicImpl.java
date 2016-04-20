@@ -1,7 +1,8 @@
 package com.zhoubenliang.myzernews.model;
 
-import com.matto.R;
-import com.matto.ui.view.MainView;
+
+import com.zhoubenliang.myzernews.R;
+import com.zhoubenliang.myzernews.ui.view.MainView;
 
 /**
  * author meikoz on 2016/4/19.

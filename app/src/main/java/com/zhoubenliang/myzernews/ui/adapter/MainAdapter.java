@@ -4,8 +4,8 @@ import android.content.Context;
 
 import com.common.view.apdater.BasicAdapter;
 import com.common.view.apdater.BasicViewHolder;
-import com.matto.R;
-import com.matto.pojo.GankDetails;
+import com.zhoubenliang.myzernews.R;
+import com.zhoubenliang.myzernews.pojo.GankDetails;
 
 import java.util.List;
 
