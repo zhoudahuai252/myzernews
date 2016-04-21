@@ -34,6 +34,16 @@ public class SplashActivity extends BaseActivity {
         startScaleAnimation();
     }
 
+    @Override
+    protected void onInitEvent() {
+
+    }
+
+    @Override
+    protected void onLoadData() {
+
+    }
+
     private void startScaleAnimation() {
         /** 设置位移动画 向右位移150 */
         ScaleAnimation animation = new ScaleAnimation(1f, 1.2f, 1f, 1.2f,
@@ -45,9 +55,7 @@ public class SplashActivity extends BaseActivity {
         AnimationUtil.setAnimationListener(animation, new AnimationUtil.AnimListener() {
             @Override
             public void onAnimFinish() {
-//                startActivity(new Intent(SplashActivity.this,LoginActivity.class));
-//                finish();
-                LoginActivity.start(SplashActivity.this);
+                MainActivity.start(SplashActivity.this);
             }
         });
     }

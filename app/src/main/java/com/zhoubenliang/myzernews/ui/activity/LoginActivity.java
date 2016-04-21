@@ -48,6 +48,16 @@ public class LoginActivity extends BaseActivity implements LoginView {
         mLoginLogic = LogicProxy.getInstance().getBindViewProxy(LoginLogic.class, this);
     }
 
+    @Override
+    protected void onInitEvent() {
+
+    }
+
+    @Override
+    protected void onLoadData() {
+
+    }
+
     @OnClick(R.id.btn_login)
     void login() {
         mLoginLogic.login("zhangsan", "123");

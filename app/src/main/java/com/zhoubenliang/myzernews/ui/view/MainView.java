@@ -7,7 +7,9 @@ package com.zhoubenliang.myzernews.ui.view;
 public interface MainView {
     void switchHome();
 
-    void switchDiscovery();
+    void switchHot();
 
-    void switchShomeMe();
+    void switchLife();
+
+    void switchTopic();
 }

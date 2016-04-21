@@ -1,48 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
 
     <FrameLayout
-        android:layout_weight="1"
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/appbar"
+        android:layout_weight="1"
         android:elevation="5dp"
         android:scrollbars="none"
         />
 
-    <LinearLayout
+    <View
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="@color/white">
+        android:layout_height="1px"
+        android:background="@color/textDark"/>
 
-        <TextView
-            android:id="@+id/navigation_selection"
-            android:text="精选"
-            android:gravity="center"
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_boxview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TextView
-            android:id="@+id/navigation_discovery"
-            android:text="发现"
+            android:button="@null"
+            android:drawableTop="@drawable/sel_boxview_tab"
             android:gravity="center"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:text="订阅"
+            android:textColor="@color/sel_text_color"/>
 
-        <TextView
-            android:id="@+id/navigation_about"
-            android:text="关于"
+        <RadioButton
+            android:id="@+id/rb_hot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/sel_hotdaily_tab"
             android:gravity="center"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:text="热点"
+            android:textColor="@color/sel_text_color"/>
 
-    </LinearLayout>
+        <RadioButton
+            android:id="@+id/rb_life"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/sel_life_tab"
+            android:gravity="center"
+            android:text="玩乐"
+            android:textColor="@color/sel_text_color"/>
+
+        <RadioButton
+            android:id="@+id/rb_topic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/sel_topic_drab"
+            android:gravity="center"
+            android:text="社区"
+            android:textColor="@color/sel_text_color"/>
+    </RadioGroup>
 </LinearLayout>

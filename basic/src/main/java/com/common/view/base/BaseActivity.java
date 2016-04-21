@@ -23,10 +23,18 @@ public abstract class BaseActivity extends FragmentActivity {
         setContentView(getLayoutResource());
         ButterKnife.bind(this);
         onInitView();
+        onInitEvent();
+        onLoadData();
     }
+
     protected abstract int getLayoutResource();
 
     protected abstract void onInitView();
+
+    protected abstract void onInitEvent();
+
+    protected abstract void onLoadData();
+
 
     @Override
     protected void onDestroy() {

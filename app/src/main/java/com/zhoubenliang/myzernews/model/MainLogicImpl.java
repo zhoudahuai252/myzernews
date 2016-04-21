@@ -1,7 +1,6 @@
 package com.zhoubenliang.myzernews.model;
 
 
-import com.zhoubenliang.myzernews.R;
 import com.zhoubenliang.myzernews.ui.view.MainView;
 
 /**
@@ -15,19 +14,7 @@ public class MainLogicImpl implements MainLogic {
     @Override
     public void switchNavigation(int id) {
 
-        switch (id) {
-            case R.id.navigation_selection:
-                mMainView.switchHome();
-                break;
-            case R.id.navigation_discovery:
-                mMainView.switchDiscovery();
-                break;
-            case R.id.navigation_about:
-                mMainView.switchShomeMe();
-                break;
-            default:
-                break;
-        }
+
     }
 
     @Override
