@@ -9,10 +9,10 @@ import android.widget.RadioGroup;
 
 import com.common.view.base.BaseActivity;
 import com.zhoubenliang.myzernews.R;
-import com.zhoubenliang.myzernews.ui.fragment.BoxViewFragment;
-import com.zhoubenliang.myzernews.ui.fragment.HotFragment;
-import com.zhoubenliang.myzernews.ui.fragment.LifeFragment;
-import com.zhoubenliang.myzernews.ui.fragment.TopicFragment;
+import com.zhoubenliang.myzernews.module.boxview.ui.BoxViewFragment;
+import com.zhoubenliang.myzernews.module.hot.ui.HotFragment;
+import com.zhoubenliang.myzernews.module.life.ui.LifeFragment;
+import com.zhoubenliang.myzernews.module.topic.ui.TopicFragment;
 
 import java.util.HashMap;
 import java.util.Map;

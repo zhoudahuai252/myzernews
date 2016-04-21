@@ -5,5 +5,6 @@ package com.zhoubenliang.myzernews.pojo;
  * email  meikoz@126.com
  */
 public class CommonRepo {
-    public boolean error;
+    public boolean stat;
+    public String msg;
 }

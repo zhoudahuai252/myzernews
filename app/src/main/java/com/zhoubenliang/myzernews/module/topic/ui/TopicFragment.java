@@ -1,4 +1,4 @@
-package com.zhoubenliang.myzernews.ui.fragment;
+package com.zhoubenliang.myzernews.module.topic.ui;
 
 import com.common.view.base.BaseFragment;
 import com.zhoubenliang.myzernews.R;
@@ -15,6 +15,16 @@ public class TopicFragment extends BaseFragment {
 
     @Override
     protected void onInitData() {
+
+    }
+
+    @Override
+    protected void onInit() {
+
+    }
+
+    @Override
+    protected void onInitEvent() {
 
     }
 }
