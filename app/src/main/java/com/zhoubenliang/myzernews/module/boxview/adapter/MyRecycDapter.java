@@ -42,35 +42,42 @@ public class MyRecycDapter extends android.support.v7.widget.RecyclerView.Adapte
 
     @Override
     public void onBindViewHolder(final MyHolder holder, int position) {
-        //设置文本文字
-        BoxMenuBean.DataBean.BlocksDataBean dataBean = mBoxMenuData.get(position);
-        holder.mTextView.setText(dataBean.getBlock_title());
-        //在文本上方画图片
-        String strUrl = dataBean.getPic();//图片网址
-        final String block_color = dataBean.getBlock_color();
+        //判断当前位置是否最后一个
+        if (position == mBoxMenuData.size()) {
+            holder.mTextView.setText("添加更多");
+//            holder.mImageView.set
+            holder.mImageView.setImageResource(R.mipmap.icon_plus_more);
+        } else {
+            //设置文本文字
+            BoxMenuBean.DataBean.BlocksDataBean dataBean = mBoxMenuData.get(position);
+            holder.mTextView.setText(dataBean.getBlock_title());
+            //在文本上方画图片
+            String strUrl = dataBean.getPic();//图片网址
+            final String block_color = dataBean.getBlock_color();
 
-        GlideProxy.getInstance().withCallBack(mContext, strUrl, new GlideCallBack() {
-            @Override
-            public void callBack(Bitmap b) {
-                int[] pixels = new int[b.getWidth() * b.getHeight()];
-                b.getPixels(pixels, 0, b.getWidth(), 0, 0, b.getWidth(), b.getHeight());
-                for (int i = 0; i < pixels.length; i++) {
-                    if (pixels[i] != 0) {
-                        if (block_color == null)
-                            pixels[i] = Color.parseColor("#000000");
-                        else
-                            pixels[i] = Color.parseColor(block_color);
+            GlideProxy.getInstance().withCallBack(mContext, strUrl, new GlideCallBack() {
+                @Override
+                public void callBack(Bitmap b) {
+                    int[] pixels = new int[b.getWidth() * b.getHeight()];
+                    b.getPixels(pixels, 0, b.getWidth(), 0, 0, b.getWidth(), b.getHeight());
+                    for (int i = 0; i < pixels.length; i++) {
+                        if (pixels[i] != 0) {
+                            if (block_color == null)
+                                pixels[i] = Color.parseColor("#000000");
+                            else
+                                pixels[i] = Color.parseColor(block_color);
+                        }
                     }
+                    Bitmap bm = Bitmap.createBitmap(pixels, b.getWidth(), b.getHeight(), Bitmap.Config.ARGB_8888);
+                    holder.mImageView.setImageBitmap(bm);
                 }
-                Bitmap bm = Bitmap.createBitmap(pixels, b.getWidth(), b.getHeight(), Bitmap.Config.ARGB_8888);
-                holder.mImageView.setImageBitmap(bm);
-            }
-        });
+            });
+        }
     }
 
     @Override
     public int getItemCount() {
-        return mBoxMenuData.size();
+        return mBoxMenuData.size() + 1;//最后一个元素用于添加更多
     }
 
     public class MyHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -87,9 +94,15 @@ public class MyRecycDapter extends android.support.v7.widget.RecyclerView.Adapte
         @Override
         public void onClick(View v) {
             //点击BoxMenu跳转
-            Intent intent = new Intent(mContext, TopicActivity.class);
-            intent.putExtra("api_url", mBoxMenuData.get(getLayoutPosition()).getApi_url());
-            mContext.startActivity(intent);
+            int position = getLayoutPosition();
+            if (position == mBoxMenuData.size()) {
+                //TODO 跳转添加更多页面
+            } else {
+                //跳转主题新闻页面
+                Intent intent = new Intent(mContext, TopicActivity.class);
+                intent.putExtra("api_url", mBoxMenuData.get(position).getApi_url());
+                mContext.startActivity(intent);
+            }
         }
     }
 }
