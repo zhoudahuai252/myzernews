@@ -2,11 +2,12 @@ package com.common.view.base;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Window;
 
 import com.common.R;
-
 
 import butterknife.ButterKnife;
 
@@ -14,7 +15,7 @@ import butterknife.ButterKnife;
  * author meikoz on 2016/3/30.
  * email  meikoz@126.com
  */
-public abstract class BaseActivity extends FragmentActivity {
+public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +23,15 @@ public abstract class BaseActivity extends FragmentActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(getLayoutResource());
         ButterKnife.bind(this);
+
         onInitView();
         onInitEvent();
         onLoadData();
+    }
+
+    @Override
+    public void setSupportActionBar(@Nullable Toolbar toolbar) {
+        super.setSupportActionBar(toolbar);
     }
 
     protected abstract int getLayoutResource();

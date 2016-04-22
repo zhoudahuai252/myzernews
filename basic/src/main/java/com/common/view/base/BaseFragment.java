@@ -38,7 +38,7 @@ public abstract class BaseFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         onInit();
         onInitEvent();
-        onInitData();
+        onLoadData();
     }
 
     protected abstract int getLayoutResource();
@@ -47,7 +47,7 @@ public abstract class BaseFragment extends Fragment {
 
     protected abstract void onInitEvent();
 
-    protected abstract void onInitData();
+    protected abstract void onLoadData();
 
     public String getName() {
         return BaseFragment.class.getName();

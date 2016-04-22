@@ -14,7 +14,7 @@ public class LifeFragment extends BaseFragment {
     }
 
     @Override
-    protected void onInitData() {
+    protected void onLoadData() {
 
     }
 

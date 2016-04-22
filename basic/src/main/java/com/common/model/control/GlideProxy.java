@@ -1,10 +1,13 @@
 package com.common.model.control;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
 import com.common.R;
 import com.common.view.widget.GlideCircleTransform;
 
@@ -17,7 +20,8 @@ public class GlideProxy {
     public static final String ANDROID_RESOURCE = "android.resource://";
     public static final String FOREWARD_SLASH = "/";
 
-    private GlideProxy() {}
+    private GlideProxy() {
+    }
 
     private static class GlideControlHolder {
         private static GlideProxy instance = new GlideProxy();
@@ -47,6 +51,16 @@ public class GlideProxy {
     public void loadLocalImage(Context context, String path, ImageView imageView) {
         Glide.with(context)
                 .load("file://" + path)
+                .placeholder(R.color.view_black_default)
+                .error(R.color.view_black_default)
+                .crossFade()
+                .into(imageView);
+    }
+
+    // 加载网络图片
+    public void loadNetworkImage(Context context, String url, ImageView imageView) {
+        Glide.with(context)
+                .load(url)
                 .placeholder(R.color.view_black_default)
                 .error(R.color.view_black_default)
                 .crossFade()
@@ -86,5 +100,17 @@ public class GlideProxy {
                 .into(imageView);
     }
 
+    public void withCallBack(Context context, String url, final GlideCallBack callBack) {
+        Glide.with(context)
+                .load(url)
+                .asBitmap()
+                .fitCenter()
+                .into(new SimpleTarget<Bitmap>() {
+                    @Override
+                    public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+                        callBack.callBack(resource);
+                    }
+                });
+    }
 
 }

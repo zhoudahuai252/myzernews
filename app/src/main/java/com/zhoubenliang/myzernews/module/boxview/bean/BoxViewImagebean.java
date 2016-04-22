@@ -12,15 +12,15 @@ public class BoxViewImageBean {
     /**
      * stat : 1
      * msg : OK
-     * data : {"info":{"common_api_url":"http://iphone.myzaker.com/zaker/common_api.php","readstat":"http://stat.myzaker.com/stat.php"},"message_info":{"refresh_key":"1461231601","show_key":"1398073055"},"list":[{"pk":"57189e34e292b25225000005","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160421/up_1461231237_41129.jpg","img_height":"360","img_width":"640","title":"台湾天价牛肉面：一碗2000元","end_time":"1461240000","type":"topic","pop_type":"","hide_mask":"N","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=57189e34e292b25225000005&position=my_subscriptions_promotion&click_stat=1","stat_read_url":"http://adm.myzaker.com/ads_stat.php?ads_id=57189e34e292b25225000005&position=my_subscriptions_promotion_read&action=read","tag_info":{"type":"img","text":"top10","image_url":"http://zkres.myzaker.com/data/image/mark/top10_2x.png","img_height":"26","img_width":"46","tag_position":"1"},"start_time":"1461231030","topic":{"pk":"5717dfc1a07aecf246000006","block_title":"20160421十说今日","title":"20160421十说今日","block_in_title":"20160421十说今日","type":"user","skey":"1461231253","api_url":"http://iphone.myzaker.com/zaker/topic.php?app_id=660&topic_id=5717dfc1a07aecf246000006"}},{"pk":"571881389490cbd26d000006","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160421/up_1461224694_33139.jpg","img_height":"360","img_width":"640","title":"震撼！300名少年在课桌上进行割礼","end_time":"1461240000","type":"block","pop_type":"","hide_mask":"Y","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571881389490cbd26d000006&position=my_subscriptions_promotion&click_stat=1","stat_read_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571881389490cbd26d000006&position=my_subscriptions_promotion_read&action=read","tag_info":{"type":"img","text":"频道","image_url":"http://zkres.myzaker.com/data/image/mark/channel_2x.png","img_height":"26","img_width":"46","tag_position":"1"},"start_time":"1461225600","block_info":{"pk":"2","title":"国际新闻","stitle":"","block_title":"国际新闻","api_url":"http://iphone.myzaker.com/zaker/news.php?app_id=2&act=list","data_type":"rss","pic":"http://zkres.myzaker.com/data/image/logo/2.png?t=1458296112","large_pic":"http://zkres.myzaker.com/data/image/logo/ipad3/2.png?t=1458296112"}},{"pk":"571887139490cbd26d000009","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160421/up_1461225218_24291.jpg","img_height":"360","img_width":"640","title":"她不美不瘦不高，却穿得比明星们更好看","end_time":"1461232800","type":"block","pop_type":"","hide_mask":"N","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571887139490cbd26d000009&position=my_subscriptions_promotion&click_stat=1","stat_read_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571887139490cbd26d000009&position=my_subscriptions_promotion_read&action=read","tag_info":{"type":"img","text":"频道","image_url":"http://zkres.myzaker.com/data/image/mark/channel_2x.png","img_height":"26","img_width":"46","tag_position":"1"},"start_time":"1461225600","block_info":{"pk":"12","title":"时尚频道","stitle":"","block_title":"时尚频道","api_url":"http://iphone.myzaker.com/zaker/news.php?app_id=12","data_type":"rss","pic":"http://zkres.myzaker.com/data/image/logo/12.png?1383291556","large_pic":"http://zkres.myzaker.com/data/image/logo/ipad3/12.png?1383291556"}},{"pk":"571885e89490cb4a6e000014","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160421/up_1461224922_8895.jpg","img_height":"360","img_width":"640","title":"女朋友非常好看是一种怎样的体验？","end_time":"1461240000","type":"block","pop_type":"","hide_mask":"N","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571885e89490cb4a6e000014&position=my_subscriptions_promotion&click_stat=1","stat_read_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571885e89490cb4a6e000014&position=my_subscriptions_promotion_read&action=read","tag_info":{"type":"img","text":"频道","image_url":"http://zkres.myzaker.com/data/image/mark/channel_2x.png","img_height":"26","img_width":"46","tag_position":"1"},"start_time":"1461229200","block_info":{"pk":"11581","title":"爆笑日常","stitle":"","block_title":"爆笑日常","api_url":"http://iphone.myzaker.com/zaker/news.php?app_id=11581","data_type":"rss","pic":"http://zkres.myzaker.com/data/image/logo/11581.png?1419411401","large_pic":"http://zkres.myzaker.com/data/image/logo/ipad3/11581.png?1419411401"}}]}
+     * data : {"info":{"common_api_url":"http://iphone.myzaker.com/zaker/common_api.php","readstat":"http://stat.myzaker.com/stat.php"},"message_info":{"refresh_key":"1461313201","show_key":"1398073055"},"list":[{"pk":"5719cd069490cbee4d00000b","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160422/up_1461308211_51496.jpg","img_height":"360","img_width":"640","title":"谢霆锋家庭失意跟谢贤有几分关系？","end_time":"1461317640","type":"topic","pop_type":"","hide_mask":"N","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=5719cd069490cbee4d00000b&position=my_subscriptions_promotion&click_stat=1","tag_info":{"type":"img","text":"专题","image_url":"http://zkres.myzaker.com/data/image/mark/topic_2x.png","img_height":"26","img_width":"46"},"start_time":"1461309300","topic":{"pk":"5717dfc1a07aecf246000002","block_title":"20160422Tea Time","title":"20160422Tea Time","block_in_title":"20160422Tea Time","type":"user","skey":"1461308678","api_url":"http://iphone.myzaker.com/zaker/topic.php?app_id=660&topic_id=5717dfc1a07aecf246000002"}},{"pk":"571987069490cbfe26000002","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160422/up_1461290740_48442.jpg","img_height":"360","img_width":"640","title":"世界地球日，绿色革命从厨房开始","end_time":"1461376800","type":"a","pop_type":"","hide_mask":"Y","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571987069490cbfe26000002&position=my_subscriptions_promotion&click_stat=1&is_ad=1&fix_position=2","tag_info":{"type":"img","text":"广告","image_url":"http://zkres.myzaker.com/data/image/mark/ad_2x.png","img_height":"26","img_width":"46"},"start_time":"1461290721","article":{"pk":"571985509490cbb136000021","title":"世界地球日，绿色革命从厨房开始","app_ids":"11715","date":"2016-04-23 10:00:00","auther_name":"科技频道","weburl":"http://iphone.myzaker.com/l.php?l=571985509490cbb136000021","is_full":"NO","content":"","full_url":"http://iphone.myzaker.com/zaker/article_mongo.php?app_id=11715&pk=571985509490cbb136000021"}},{"pk":"5719d9839490cba61e000006","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160422/up_1461311849_34963.jpg","img_height":"360","img_width":"640","title":"3岁男童不慎启动三轮 遭重卡碾压身亡","end_time":"1461326400","type":"block","pop_type":"","hide_mask":"Y","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=5719d9839490cba61e000006&position=my_subscriptions_promotion&click_stat=1","tag_info":{"type":"img","text":"频道","image_url":"http://zkres.myzaker.com/data/image/mark/channel_2x.png","img_height":"26","img_width":"46"},"start_time":"1461312000","block_info":{"pk":"1","title":"国内新闻","stitle":"","block_title":"国内新闻","api_url":"http://iphone.myzaker.com/zaker/news.php?app_id=1&act=list","data_type":"rss","pic":"http://zkres.myzaker.com/data/image/logo/1.png?t=1461208757","large_pic":"http://zkres.myzaker.com/data/image/logo/ipad3/1.png?t=1461208757"}},{"pk":"5719ccee9490cbef59000011","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160422/up_1461308623_29479.jpg","img_height":"360","img_width":"640","title":"震源深度0千米，非天然地震是什么鬼？","end_time":"1461319200","type":"block","pop_type":"","hide_mask":"N","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=5719ccee9490cbef59000011&position=my_subscriptions_promotion&click_stat=1","tag_info":{"type":"img","text":"频道","image_url":"http://zkres.myzaker.com/data/image/mark/channel_2x.png","img_height":"26","img_width":"46"},"start_time":"1461312000","block_info":{"pk":"1039","title":"科学频道","stitle":"","block_title":"科学频道","api_url":"http://iphone.myzaker.com/zaker/blog.php?app_id=1039","data_type":"rss","pic":"http://zkres.myzaker.com/data/image/logo/1039.png?1420357676","large_pic":"http://zkres.myzaker.com/data/image/logo/ipad3/1039.png?1420357676"}},{"pk":"5719c7869490cbd22000000f","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160422/up_1461307246_54795.jpg","img_height":"360","img_width":"640","title":"四月的螃蟹，竟然如此好吃！","end_time":"1461317400","type":"block","pop_type":"","hide_mask":"N","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=5719c7869490cbd22000000f&position=my_subscriptions_promotion&click_stat=1","tag_info":{"type":"img","text":"频道","image_url":"http://zkres.myzaker.com/data/image/mark/channel_2x.png","img_height":"26","img_width":"46"},"start_time":"1461308400","block_info":{"pk":"10386","title":"美食频道","stitle":"","block_title":"美食频道","api_url":"http://iphone.myzaker.com/zaker/news.php?app_id=10386","data_type":"rss","pic":"http://zkres.myzaker.com/data/image/logo/10386.png?t=1458288274","large_pic":"http://zkres.myzaker.com/data/image/logo/ipad3/10386.png?t=1458288274"}}]}
      */
 
     private String stat;
     private String msg;
     /**
      * info : {"common_api_url":"http://iphone.myzaker.com/zaker/common_api.php","readstat":"http://stat.myzaker.com/stat.php"}
-     * message_info : {"refresh_key":"1461231601","show_key":"1398073055"}
-     * list : [{"pk":"57189e34e292b25225000005","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160421/up_1461231237_41129.jpg","img_height":"360","img_width":"640","title":"台湾天价牛肉面：一碗2000元","end_time":"1461240000","type":"topic","pop_type":"","hide_mask":"N","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=57189e34e292b25225000005&position=my_subscriptions_promotion&click_stat=1","stat_read_url":"http://adm.myzaker.com/ads_stat.php?ads_id=57189e34e292b25225000005&position=my_subscriptions_promotion_read&action=read","tag_info":{"type":"img","text":"top10","image_url":"http://zkres.myzaker.com/data/image/mark/top10_2x.png","img_height":"26","img_width":"46","tag_position":"1"},"start_time":"1461231030","topic":{"pk":"5717dfc1a07aecf246000006","block_title":"20160421十说今日","title":"20160421十说今日","block_in_title":"20160421十说今日","type":"user","skey":"1461231253","api_url":"http://iphone.myzaker.com/zaker/topic.php?app_id=660&topic_id=5717dfc1a07aecf246000006"}},{"pk":"571881389490cbd26d000006","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160421/up_1461224694_33139.jpg","img_height":"360","img_width":"640","title":"震撼！300名少年在课桌上进行割礼","end_time":"1461240000","type":"block","pop_type":"","hide_mask":"Y","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571881389490cbd26d000006&position=my_subscriptions_promotion&click_stat=1","stat_read_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571881389490cbd26d000006&position=my_subscriptions_promotion_read&action=read","tag_info":{"type":"img","text":"频道","image_url":"http://zkres.myzaker.com/data/image/mark/channel_2x.png","img_height":"26","img_width":"46","tag_position":"1"},"start_time":"1461225600","block_info":{"pk":"2","title":"国际新闻","stitle":"","block_title":"国际新闻","api_url":"http://iphone.myzaker.com/zaker/news.php?app_id=2&act=list","data_type":"rss","pic":"http://zkres.myzaker.com/data/image/logo/2.png?t=1458296112","large_pic":"http://zkres.myzaker.com/data/image/logo/ipad3/2.png?t=1458296112"}},{"pk":"571887139490cbd26d000009","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160421/up_1461225218_24291.jpg","img_height":"360","img_width":"640","title":"她不美不瘦不高，却穿得比明星们更好看","end_time":"1461232800","type":"block","pop_type":"","hide_mask":"N","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571887139490cbd26d000009&position=my_subscriptions_promotion&click_stat=1","stat_read_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571887139490cbd26d000009&position=my_subscriptions_promotion_read&action=read","tag_info":{"type":"img","text":"频道","image_url":"http://zkres.myzaker.com/data/image/mark/channel_2x.png","img_height":"26","img_width":"46","tag_position":"1"},"start_time":"1461225600","block_info":{"pk":"12","title":"时尚频道","stitle":"","block_title":"时尚频道","api_url":"http://iphone.myzaker.com/zaker/news.php?app_id=12","data_type":"rss","pic":"http://zkres.myzaker.com/data/image/logo/12.png?1383291556","large_pic":"http://zkres.myzaker.com/data/image/logo/ipad3/12.png?1383291556"}},{"pk":"571885e89490cb4a6e000014","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160421/up_1461224922_8895.jpg","img_height":"360","img_width":"640","title":"女朋友非常好看是一种怎样的体验？","end_time":"1461240000","type":"block","pop_type":"","hide_mask":"N","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571885e89490cb4a6e000014&position=my_subscriptions_promotion&click_stat=1","stat_read_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571885e89490cb4a6e000014&position=my_subscriptions_promotion_read&action=read","tag_info":{"type":"img","text":"频道","image_url":"http://zkres.myzaker.com/data/image/mark/channel_2x.png","img_height":"26","img_width":"46","tag_position":"1"},"start_time":"1461229200","block_info":{"pk":"11581","title":"爆笑日常","stitle":"","block_title":"爆笑日常","api_url":"http://iphone.myzaker.com/zaker/news.php?app_id=11581","data_type":"rss","pic":"http://zkres.myzaker.com/data/image/logo/11581.png?1419411401","large_pic":"http://zkres.myzaker.com/data/image/logo/ipad3/11581.png?1419411401"}}]
+     * message_info : {"refresh_key":"1461313201","show_key":"1398073055"}
+     * list : [{"pk":"5719cd069490cbee4d00000b","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160422/up_1461308211_51496.jpg","img_height":"360","img_width":"640","title":"谢霆锋家庭失意跟谢贤有几分关系？","end_time":"1461317640","type":"topic","pop_type":"","hide_mask":"N","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=5719cd069490cbee4d00000b&position=my_subscriptions_promotion&click_stat=1","tag_info":{"type":"img","text":"专题","image_url":"http://zkres.myzaker.com/data/image/mark/topic_2x.png","img_height":"26","img_width":"46"},"start_time":"1461309300","topic":{"pk":"5717dfc1a07aecf246000002","block_title":"20160422Tea Time","title":"20160422Tea Time","block_in_title":"20160422Tea Time","type":"user","skey":"1461308678","api_url":"http://iphone.myzaker.com/zaker/topic.php?app_id=660&topic_id=5717dfc1a07aecf246000002"}},{"pk":"571987069490cbfe26000002","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160422/up_1461290740_48442.jpg","img_height":"360","img_width":"640","title":"世界地球日，绿色革命从厨房开始","end_time":"1461376800","type":"a","pop_type":"","hide_mask":"Y","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=571987069490cbfe26000002&position=my_subscriptions_promotion&click_stat=1&is_ad=1&fix_position=2","tag_info":{"type":"img","text":"广告","image_url":"http://zkres.myzaker.com/data/image/mark/ad_2x.png","img_height":"26","img_width":"46"},"start_time":"1461290721","article":{"pk":"571985509490cbb136000021","title":"世界地球日，绿色革命从厨房开始","app_ids":"11715","date":"2016-04-23 10:00:00","auther_name":"科技频道","weburl":"http://iphone.myzaker.com/l.php?l=571985509490cbb136000021","is_full":"NO","content":"","full_url":"http://iphone.myzaker.com/zaker/article_mongo.php?app_id=11715&pk=571985509490cbb136000021"}},{"pk":"5719d9839490cba61e000006","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160422/up_1461311849_34963.jpg","img_height":"360","img_width":"640","title":"3岁男童不慎启动三轮 遭重卡碾压身亡","end_time":"1461326400","type":"block","pop_type":"","hide_mask":"Y","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=5719d9839490cba61e000006&position=my_subscriptions_promotion&click_stat=1","tag_info":{"type":"img","text":"频道","image_url":"http://zkres.myzaker.com/data/image/mark/channel_2x.png","img_height":"26","img_width":"46"},"start_time":"1461312000","block_info":{"pk":"1","title":"国内新闻","stitle":"","block_title":"国内新闻","api_url":"http://iphone.myzaker.com/zaker/news.php?app_id=1&act=list","data_type":"rss","pic":"http://zkres.myzaker.com/data/image/logo/1.png?t=1461208757","large_pic":"http://zkres.myzaker.com/data/image/logo/ipad3/1.png?t=1461208757"}},{"pk":"5719ccee9490cbef59000011","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160422/up_1461308623_29479.jpg","img_height":"360","img_width":"640","title":"震源深度0千米，非天然地震是什么鬼？","end_time":"1461319200","type":"block","pop_type":"","hide_mask":"N","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=5719ccee9490cbef59000011&position=my_subscriptions_promotion&click_stat=1","tag_info":{"type":"img","text":"频道","image_url":"http://zkres.myzaker.com/data/image/mark/channel_2x.png","img_height":"26","img_width":"46"},"start_time":"1461312000","block_info":{"pk":"1039","title":"科学频道","stitle":"","block_title":"科学频道","api_url":"http://iphone.myzaker.com/zaker/blog.php?app_id=1039","data_type":"rss","pic":"http://zkres.myzaker.com/data/image/logo/1039.png?1420357676","large_pic":"http://zkres.myzaker.com/data/image/logo/ipad3/1039.png?1420357676"}},{"pk":"5719c7869490cbd22000000f","promotion_img":"http://zkres3.myzaker.com/img_upload/editor/img_upload/20160422/up_1461307246_54795.jpg","img_height":"360","img_width":"640","title":"四月的螃蟹，竟然如此好吃！","end_time":"1461317400","type":"block","pop_type":"","hide_mask":"N","ads_stat_url":"http://adm.myzaker.com/ads_stat.php?ads_id=5719c7869490cbd22000000f&position=my_subscriptions_promotion&click_stat=1","tag_info":{"type":"img","text":"频道","image_url":"http://zkres.myzaker.com/data/image/mark/channel_2x.png","img_height":"26","img_width":"46"},"start_time":"1461308400","block_info":{"pk":"10386","title":"美食频道","stitle":"","block_title":"美食频道","api_url":"http://iphone.myzaker.com/zaker/news.php?app_id=10386","data_type":"rss","pic":"http://zkres.myzaker.com/data/image/logo/10386.png?t=1458288274","large_pic":"http://zkres.myzaker.com/data/image/logo/ipad3/10386.png?t=1458288274"}}]
      */
 
     private DataBean data;
@@ -57,26 +57,25 @@ public class BoxViewImageBean {
 
         private InfoBean info;
         /**
-         * refresh_key : 1461231601
+         * refresh_key : 1461313201
          * show_key : 1398073055
          */
 
         private MessageInfoBean message_info;
         /**
-         * pk : 57189e34e292b25225000005
-         * promotion_img : http://zkres3.myzaker.com/img_upload/editor/img_upload/20160421/up_1461231237_41129.jpg
+         * pk : 5719cd069490cbee4d00000b
+         * promotion_img : http://zkres3.myzaker.com/img_upload/editor/img_upload/20160422/up_1461308211_51496.jpg
          * img_height : 360
          * img_width : 640
-         * title : 台湾天价牛肉面：一碗2000元
-         * end_time : 1461240000
+         * title : 谢霆锋家庭失意跟谢贤有几分关系？
+         * end_time : 1461317640
          * type : topic
          * pop_type :
          * hide_mask : N
-         * ads_stat_url : http://adm.myzaker.com/ads_stat.php?ads_id=57189e34e292b25225000005&position=my_subscriptions_promotion&click_stat=1
-         * stat_read_url : http://adm.myzaker.com/ads_stat.php?ads_id=57189e34e292b25225000005&position=my_subscriptions_promotion_read&action=read
-         * tag_info : {"type":"img","text":"top10","image_url":"http://zkres.myzaker.com/data/image/mark/top10_2x.png","img_height":"26","img_width":"46","tag_position":"1"}
-         * start_time : 1461231030
-         * topic : {"pk":"5717dfc1a07aecf246000006","block_title":"20160421十说今日","title":"20160421十说今日","block_in_title":"20160421十说今日","type":"user","skey":"1461231253","api_url":"http://iphone.myzaker.com/zaker/topic.php?app_id=660&topic_id=5717dfc1a07aecf246000006"}
+         * ads_stat_url : http://adm.myzaker.com/ads_stat.php?ads_id=5719cd069490cbee4d00000b&position=my_subscriptions_promotion&click_stat=1
+         * tag_info : {"type":"img","text":"专题","image_url":"http://zkres.myzaker.com/data/image/mark/topic_2x.png","img_height":"26","img_width":"46"}
+         * start_time : 1461309300
+         * topic : {"pk":"5717dfc1a07aecf246000002","block_title":"20160422Tea Time","title":"20160422Tea Time","block_in_title":"20160422Tea Time","type":"user","skey":"1461308678","api_url":"http://iphone.myzaker.com/zaker/topic.php?app_id=660&topic_id=5717dfc1a07aecf246000002"}
          */
 
         private List<ListBean> list;
@@ -158,28 +157,26 @@ public class BoxViewImageBean {
             private String pop_type;
             private String hide_mask;
             private String ads_stat_url;
-            private String stat_read_url;
             /**
              * type : img
-             * text : top10
-             * image_url : http://zkres.myzaker.com/data/image/mark/top10_2x.png
+             * text : 专题
+             * image_url : http://zkres.myzaker.com/data/image/mark/topic_2x.png
              * img_height : 26
              * img_width : 46
-             * tag_position : 1
              */
 
             private TagInfoBean tag_info;
             private String start_time;
             /**
-             * pk : 5717dfc1a07aecf246000006
-             * block_title : 20160421十说今日
-             * title : 20160421十说今日
-             * block_in_title : 20160421十说今日
+             * pk : 5717dfc1a07aecf246000002
+             * block_title : 20160422Tea Time
+             * title : 20160422Tea Time
+             * block_in_title : 20160422Tea Time
              * type : user
-             * skey : 1461231253
-             * api_url : http://iphone.myzaker.com/zaker/topic.php?app_id=660&topic_id=5717dfc1a07aecf246000006
+             * skey : 1461308678
+             * api_url : http://iphone.myzaker.com/zaker/topic.php?app_id=660&topic_id=5717dfc1a07aecf246000002
              */
-
+            private ArticleBean article;
             private TopicBean topic;
 
             public String getPk() {
@@ -262,14 +259,6 @@ public class BoxViewImageBean {
                 this.ads_stat_url = ads_stat_url;
             }
 
-            public String getStat_read_url() {
-                return stat_read_url;
-            }
-
-            public void setStat_read_url(String stat_read_url) {
-                this.stat_read_url = stat_read_url;
-            }
-
             public TagInfoBean getTag_info() {
                 return tag_info;
             }
@@ -290,8 +279,113 @@ public class BoxViewImageBean {
                 return topic;
             }
 
+            public ArticleBean getArticle() {
+                return article;
+            }
+
+            public void setArticle(ArticleBean article) {
+                this.article = article;
+            }
+
             public void setTopic(TopicBean topic) {
                 this.topic = topic;
+            }
+
+            public static class ArticleBean {
+
+                /**
+                 * pk : 571985509490cbb136000021
+                 * title : 世界地球日，绿色革命从厨房开始
+                 * app_ids : 11715
+                 * date : 2016-04-23 10:00:00
+                 * auther_name : 科技频道
+                 * weburl : http://iphone.myzaker.com/l.php?l=571985509490cbb136000021
+                 * is_full : NO
+                 * content :
+                 * full_url : http://iphone.myzaker.com/zaker/article_mongo.php?app_id=11715&pk=571985509490cbb136000021
+                 */
+
+                private String pk;
+                private String title;
+                private String app_ids;
+                private String date;
+                private String auther_name;
+                private String weburl;
+                private String is_full;
+                private String content;
+                private String full_url;
+
+                public String getPk() {
+                    return pk;
+                }
+
+                public void setPk(String pk) {
+                    this.pk = pk;
+                }
+
+                public String getTitle() {
+                    return title;
+                }
+
+                public void setTitle(String title) {
+                    this.title = title;
+                }
+
+                public String getApp_ids() {
+                    return app_ids;
+                }
+
+                public void setApp_ids(String app_ids) {
+                    this.app_ids = app_ids;
+                }
+
+                public String getDate() {
+                    return date;
+                }
+
+                public void setDate(String date) {
+                    this.date = date;
+                }
+
+                public String getAuther_name() {
+                    return auther_name;
+                }
+
+                public void setAuther_name(String auther_name) {
+                    this.auther_name = auther_name;
+                }
+
+                public String getWeburl() {
+                    return weburl;
+                }
+
+                public void setWeburl(String weburl) {
+                    this.weburl = weburl;
+                }
+
+                public String getIs_full() {
+                    return is_full;
+                }
+
+                public void setIs_full(String is_full) {
+                    this.is_full = is_full;
+                }
+
+                public String getContent() {
+                    return content;
+                }
+
+                public void setContent(String content) {
+                    this.content = content;
+                }
+
+                public String getFull_url() {
+                    return full_url;
+                }
+
+                public void setFull_url(String full_url) {
+                    this.full_url = full_url;
+                }
             }
 
             public static class TagInfoBean {
@@ -300,7 +394,6 @@ public class BoxViewImageBean {
                 private String image_url;
                 private String img_height;
                 private String img_width;
-                private String tag_position;
 
                 public String getType() {
                     return type;
@@ -340,14 +433,6 @@ public class BoxViewImageBean {
 
                 public void setImg_width(String img_width) {
                     this.img_width = img_width;
-                }
-
-                public String getTag_position() {
-                    return tag_position;
-                }
-
-                public void setTag_position(String tag_position) {
-                    this.tag_position = tag_position;
                 }
             }
 
