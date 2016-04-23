@@ -32,6 +32,7 @@
             android:theme="@style/ThemeSwipeBack"/>
         <activity android:name=".ui.activity.WebViewActivity"/>
         <activity android:name=".ui.activity.TopicActivity"/>
+        <activity android:name=".module.boxview.ui.SearchActivity"/>
     </application>
 
 </manifest>

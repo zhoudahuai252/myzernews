@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activity.MainActivity">
+    <item
+        android:id="@+id/btn_search"
+        android:orderInCategory="100"
+        android:title="搜索"
+        android:icon="@drawable/sel_search_btn"
+        app:showAsAction="ifRoom" />
+</menu>

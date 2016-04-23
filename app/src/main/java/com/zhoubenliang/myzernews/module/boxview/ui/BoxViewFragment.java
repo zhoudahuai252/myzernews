@@ -5,6 +5,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 
 import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
@@ -56,8 +57,30 @@ public class BoxViewFragment extends BaseFragment {
         mBannnerList = new ArrayList<>();
         mBoxMenuData = new ArrayList<>();
         adapter = new MyRecycDapter(mBoxMenuData, getActivity());
-        mToolbar.setTitle("订阅");
+        initToolbar();
+
     }
+
+    private void initToolbar() {
+        mToolbar.setTitle("订阅");
+        mToolbar.inflateMenu(R.menu.menu_box_fragment);
+        mToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                int itemId = item.getItemId();
+                switch (itemId) {
+                    case R.id.btn_search:
+                        //跳转搜索页面
+                        startActivity(new Intent(getActivity(), SearchActivity.class));
+                        break;
+                    default:
+                        break;
+                }
+                return true;
+            }
+        });
+    }
+
 
     @Override
     protected void onInitEvent() {

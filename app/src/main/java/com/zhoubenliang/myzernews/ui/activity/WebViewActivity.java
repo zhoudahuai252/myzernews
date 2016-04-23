@@ -43,7 +43,11 @@ public class WebViewActivity extends BaseActivity {
             @Override
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
-                mProgressBar.setVisibility(View.GONE);
+                if (mProgressBar != null) {
+
+                    mProgressBar.setVisibility(View.GONE);
+                }
+
             }
         });
         WebSettings settings = mWebView.getSettings();
@@ -53,6 +57,7 @@ public class WebViewActivity extends BaseActivity {
 
     @Override
     protected void onLoadData() {
+        mProgressBar.setVisibility(View.VISIBLE);
         mWebView.loadUrl(mStrUrl);
     }
 }

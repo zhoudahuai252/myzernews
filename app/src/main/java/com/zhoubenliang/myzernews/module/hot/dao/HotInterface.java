@@ -12,5 +12,5 @@ import rx.Observable;
  */
 public interface HotInterface {
     @GET("/daily_hot_new.php")
-    Observable<HotBean> getHotData(@Query("_appid") String strParms, @Query("_udid") String strUdid);
+    Observable<HotBean> getHotData(@Query("_udid") String parms);
 }

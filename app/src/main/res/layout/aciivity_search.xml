@@ -3,14 +3,13 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolbar_heigth"
-        android:background="@color/themeColor"/>
-    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
-        android:id="@+id/lv_hot"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:background="@color/themeColor"
+        android:gravity="center"
+        />
 
 </LinearLayout>
