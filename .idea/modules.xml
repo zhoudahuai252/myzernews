@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ZreNews.iml" filepath="$PROJECT_DIR$/ZreNews.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic/basic.iml" filepath="$PROJECT_DIR$/basic/basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tagviewlibrary/tagviewlibrary.iml" filepath="$PROJECT_DIR$/tagviewlibrary/tagviewlibrary.iml" />
     </modules>
   </component>
 </project>
