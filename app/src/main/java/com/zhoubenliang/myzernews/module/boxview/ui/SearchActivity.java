@@ -108,6 +108,7 @@ public class SearchActivity extends BaseActivity {
                 beginTransaction().
                 replace(R.id.fl_content, fragment)
                 .commit();
+
     }
 
     public class MessageEvent {
