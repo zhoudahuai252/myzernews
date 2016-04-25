@@ -1,7 +1,8 @@
 package com.zhoubenliang.myzernews.module.boxview.ui;
 
 import android.content.Intent;
-import android.text.TextUtils;
+import android.graphics.Color;
+import android.os.Bundle;
 import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebChromeClient;
@@ -11,17 +12,26 @@ import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.common.view.base.BaseFragment;
+import com.google.gson.Gson;
 import com.orhanobut.logger.Logger;
+import com.zhoubenliang.myzernews.App;
 import com.zhoubenliang.myzernews.R;
+import com.zhoubenliang.myzernews.module.boxview.bean.HotSearchBean;
 import com.zhoubenliang.myzernews.ui.activity.WebViewActivity;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import butterknife.Bind;
+import me.kaede.tagview.OnTagClickListener;
+import me.kaede.tagview.Tag;
 import me.kaede.tagview.TagView;
 
 /**
@@ -37,6 +47,8 @@ public class ShowFragment extends BaseFragment {
     WebView mWebView;
     @Bind(R.id.progressbar)
     ProgressBar mProgressBar;
+    private List<HotSearchBean.DataBean.WordlistBean.WordsBean> mWords;
+    private ShowCB mShowCB;
 
     @Override
     protected int getLayoutResource() {
@@ -45,6 +57,7 @@ public class ShowFragment extends BaseFragment {
 
     @Override
     protected void onInit() {
+        mShowCB = (ShowCB) getActivity();
         mWebView.setWebChromeClient(new WebChromeClient() {
 
             @Override
@@ -91,7 +104,16 @@ public class ShowFragment extends BaseFragment {
 
     @Override
     protected void onInitEvent() {
+        mTagView.setOnTagClickListener(new OnTagClickListener() {
+            @Override
+            public void onTagClick(Tag tag, int position) {
+                mShowCB.call(mWords.get(position).getText());
+            }
+        });
+    }
 
+    public interface ShowCB {
+        void call(String string);
     }
 
     /**
@@ -179,16 +201,59 @@ public class ShowFragment extends BaseFragment {
 
     @Override
     protected void onLoadData() {
-        String strQ = getArguments().getString("strQ");
-        if (!TextUtils.isEmpty(strQ)) {
+        Bundle bundle = getArguments();
+
+        if (bundle != null) {
+            String strQ = bundle.getString("strQ");
             mLinearLayout.setVisibility(View.GONE);
             //显示progressbar
             mProgressBar.setVisibility(View.VISIBLE);
             mWebView.setVisibility(View.VISIBLE);
             String strUrl = "http://search.myzaker.com/api/?keyword=" + strQ + "&_webcode=2cf89736d14f608f37d8";
             mWebView.loadUrl(strUrl);
+        } else {
+            //显示tagview
+            mLinearLayout.setVisibility(View.VISIBLE);
+
+            String url = "http://search.myzaker.com/api/?&c=keywords";
+            StringRequest strRequest = new StringRequest(url, new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+                    HotSearchBean hotSearchBean = new Gson().
+                            fromJson(response, HotSearchBean.class);
+                    if (hotSearchBean.getMsg().equals("ok") && hotSearchBean.getData() != null) {
+                        List<HotSearchBean.DataBean.WordlistBean> wordlistBeen =
+                                hotSearchBean.getData().getWordlist();
+                        showTagView(wordlistBeen);
+                    }
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+
+                }
+            });
+            App.sRequestQueue.add(strRequest);
         }
 
+    }
+
+    private void showTagView(List<HotSearchBean.DataBean.WordlistBean> wordlistBeen) {
+        HotSearchBean.DataBean.WordlistBean listBean = wordlistBeen.get(0);
+        mWords = listBean.getWords();
+        for (HotSearchBean.DataBean.WordlistBean.WordsBean wordsBean : mWords) {
+            Tag tag = new Tag(wordsBean.getText());
+            tag.tagTextColor = Color.parseColor("#FFFFFF");
+            tag.layoutColor = Color.parseColor("#DDDDDD");
+            tag.layoutColorPress = Color.parseColor("#555555");
+            //or tag.background = this.getResources().getDrawable(R.drawable.custom_bg);
+            tag.radius = 20f;
+            tag.tagTextSize = 14f;
+            tag.layoutBorderSize = 1f;
+            tag.layoutBorderColor = Color.parseColor("#FFFFFF");
+            tag.isDeletable = false;
+            mTagView.addTag(tag);
+        }
     }
 
     public static class JsSomething {

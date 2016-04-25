@@ -3,7 +3,19 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
-
+    signingConfigs {
+        release {
+            storeFile file('C:\\Keys\\baidumapstudy.jks')
+            storePassword 'a112233'
+            keyAlias 'zhoubenliang'
+            keyPassword 'a112233'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
     defaultConfig {
         applicationId "com.zhoubenliang.myzernews"
         minSdkVersion 15
@@ -15,6 +27,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
         }
     }
 }
@@ -34,4 +50,6 @@ dependencies {
     compile 'com.mcxiaoke.volley:library:1.0.19'
     compile project(':tagviewlibrary')
     compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.wuxiaolong.pullloadmorerecyclerview:library:1.0.4'
+    compile 'com.bartoszlipinski:recyclerviewheader2:2.0.0'
 }

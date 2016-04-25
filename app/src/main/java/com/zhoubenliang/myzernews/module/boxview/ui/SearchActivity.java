@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.SearchView;
 
 import com.common.view.base.BaseActivity;
+import com.orhanobut.logger.Logger;
 import com.zhoubenliang.myzernews.R;
 
 import butterknife.Bind;
@@ -21,12 +22,14 @@ import butterknife.Bind;
  * 作者:MR_zhouBL on 2016/4/23.
  * 邮箱:554524787@qq.com
  */
-public class SearchActivity extends BaseActivity {
+public class SearchActivity extends BaseActivity implements ShowFragment.ShowCB {
     @Bind(R.id.toolbar)
     Toolbar mToolbar;
     private Button mButton;
     private SearchView mSearchView;
     private final static Integer SHOW_PROGRESSBAR = 1;
+    private ShowFragment mShowFragment;
+    private AddFragment mAddFragment;
 
     @Override
     protected int getLayoutResource() {
@@ -36,6 +39,9 @@ public class SearchActivity extends BaseActivity {
     @Override
     protected void onInitView() {
         initToolbar();
+        mAddFragment = new AddFragment();
+        mShowFragment = new ShowFragment();
+        showFragment(mAddFragment);
     }
 
     private void initToolbar() {
@@ -59,6 +65,17 @@ public class SearchActivity extends BaseActivity {
     @Override
     protected void onLoadData() {
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mShowFragment.isAdded()) {
+            mAddFragment = new AddFragment();
+            showFragment(mAddFragment);
+        } else if (mAddFragment.isAdded()) {
+
+            super.onBackPressed();
+        }
     }
 
     @Override
@@ -90,17 +107,25 @@ public class SearchActivity extends BaseActivity {
                 String strQuret = (String) mSearchView.getQuery().toString();
                 //搜索
                 if (!TextUtils.isEmpty(strQuret)) {
-                    ShowFragment showFragment = new ShowFragment();
+                    mShowFragment = new ShowFragment();
                     Bundle budle = new Bundle();
                     budle.putString("strQ", strQuret);
-                    showFragment.setArguments(budle);
-                    showFragment(showFragment);
+                    mShowFragment.setArguments(budle);
+                    showFragment(mShowFragment);
                     //开始搜索。更新界面
 
                 }
             }
         });
-        mSearchView.onWindowFocusChanged(true);
+        mSearchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                Logger.d("onClick");
+                if (mAddFragment.isAdded())
+                    Logger.d("into");
+                showFragment(mShowFragment);
+            }
+        });
     }
 
     protected void showFragment(Fragment fragment) {
@@ -109,6 +134,12 @@ public class SearchActivity extends BaseActivity {
                 replace(R.id.fl_content, fragment)
                 .commit();
 
+    }
+
+    @Override
+    public void call(String string) {
+        mSearchView.setQuery(string, false);
+        mButton.performClick();
     }
 
     public class MessageEvent {

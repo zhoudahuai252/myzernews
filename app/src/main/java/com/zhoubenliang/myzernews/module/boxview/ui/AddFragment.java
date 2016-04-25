@@ -1,6 +1,8 @@
 package com.zhoubenliang.myzernews.module.boxview.ui;
 
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 
 import com.common.view.base.BaseFragment;
@@ -17,6 +19,7 @@ public class AddFragment extends BaseFragment {
     TabLayout mTabLayout;
     @Bind(R.id.vp_add)
     ViewPager mViewPager;
+    private FragmentPagerAdapter mAdapter;
 
     @Override
     protected int getLayoutResource() {
@@ -25,9 +28,38 @@ public class AddFragment extends BaseFragment {
 
     @Override
     protected void onInit() {
-        mTabLayout.addTab(mTabLayout.newTab().setText("精品").setIcon(R.drawable.shap_line_tab));
+        mTabLayout.addTab(mTabLayout.newTab().setText("精品").
+                setIcon(R.drawable.shap_line_tab));
         mTabLayout.addTab(mTabLayout.newTab().setText("频道").setIcon(R.drawable.shap_line_tab));
+        mTabLayout.setTabTextColors(R.color.black, R.color.themeColor);
+        mAdapter = new FragmentPagerAdapter(getActivity().getSupportFragmentManager()) {
+            @Override
+            public Fragment getItem(int position) {
+                if (position == 0) {
+
+                    return new JingPFragment();
+                } else {
+                    return new PingDFragment();
+                }
+
+            }
+
+            @Override
+            public int getCount() {
+                return 2;
+            }
+
+            @Override
+            public CharSequence getPageTitle(int position) {
+                if (position==0){
+                    return  "精品";
+                }else
+                    return "频道";
+            }
+        };
+        mViewPager.setAdapter(mAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
+
     }
 
     @Override

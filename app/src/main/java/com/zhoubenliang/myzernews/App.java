@@ -4,6 +4,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 import com.common.BasicApplication;
 import com.common.model.control.LogicProxy;
+import com.se7en.utils.DeviceUtils;
 import com.se7en.utils.SystemUtil;
 import com.zhoubenliang.myzernews.model.LoginLogic;
 import com.zhoubenliang.myzernews.model.MainLogic;
@@ -19,9 +20,13 @@ public class App extends BasicApplication {
     public void onCreate() {
         super.onCreate();
         SystemUtil.setContext(this);
+        DeviceUtils.setContext(this);
         sRequestQueue = Volley.newRequestQueue(this);
+
         LogicProxy.getInstance().init(
                 LoginLogic.class, MainLogic.class
         );
     }
+
+
 }
